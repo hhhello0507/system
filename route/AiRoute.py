@@ -5,10 +5,7 @@ from langchain_ollama import OllamaLLM, ChatOllama
 
 ai_router = APIRouter(prefix="/ai", tags=['AI'])
 
-message = [
-    ('human', ''),
-    ('', '')
-]
+message = []
 
 @dataclass
 class AiMessageReq:
